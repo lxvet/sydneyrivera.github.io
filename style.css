@@ -1,0 +1,41 @@
+
+body{margin: 0;
+padding: 0}
+
+.container{position: relative;
+width:100%;
+height: 100vh;
+display: flex;
+overflow: hidden;}
+
+.left{position: relative;
+width: 50%;
+height: 100%;
+background: url(background.png)
+
+overflow hidden;
+background-position:center;}
+
+.right{position: relative;
+    width: 50%;
+    height: 100%;
+    background: url(background.png)
+    overflow hidden;}
+
+    h1{position:absolute
+    font-size 10em;
+white-space:nowrap;
+color:black;
+line-height:70vh;
+animation:anim 100s linear infinite;}
+
+@keyframes anim{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-100%);}
+}
+
+.left h1{
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke: 3px;
+    left: 100% 
+}
